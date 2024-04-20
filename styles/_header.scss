@@ -9,7 +9,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
     background-color: transparent;
     padding: 27px 17px;
 
@@ -40,16 +40,26 @@
     }
 
     h5 {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .right-side {
         display: flex;
         align-items: center;
-        gap: 6px;
+        gap: 10px;
+
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+
+            &:hover {
+                transition: .5s;
+                color: #ffa343;
+            }
+        }
 
         i {
-            font-size: 10px;
+            font-size: 15px;
 
             &:hover {
                 color: var(--main-color);
